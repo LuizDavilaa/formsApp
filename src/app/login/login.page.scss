@@ -1,0 +1,43 @@
+
+
+ion-content {
+
+  --background: linear-gradient(to bottom, rgb(137, 135, 235), rgb(131, 238, 241));
+
+  .area {
+    font-size: large;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 5vh;
+  label {
+    color: #ffffff;
+    transition: transform .25s,
+    opacity .25s;
+    display: inline-flex;
+    margin-top: 10px;
+  }
+  input {
+    margin-top: 2px;
+    background-color: #F0F0F0;
+    opacity: 100;
+    width: 250px;
+    height: 35px;
+    display: block;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-family: 'Poppins';
+    font-weight: 400;
+  }
+}
+
+.button{
+  --background: rgb(137, 135, 235);
+  margin-top: 25vh;
+}
+
+}
