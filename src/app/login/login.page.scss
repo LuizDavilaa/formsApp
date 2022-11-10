@@ -1,8 +1,14 @@
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 ion-content {
+font-family: 'Poppins';
+--background: #f3f3f3;
 
-  --background: linear-gradient(to bottom, rgb(137, 135, 235), rgb(131, 238, 241));
+  .logo {
+    width: 200px;
+    margin-left: 12vh;
+    margin-top: 20px;
+  }
 
   .area {
     font-size: large;
@@ -11,33 +17,102 @@ ion-content {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-top: 5vh;
+    margin-top: -35px;
   label {
-    color: #ffffff;
-    transition: transform .25s,
-    opacity .25s;
+    color: rgb(26, 26, 26);
     display: inline-flex;
     margin-top: 10px;
   }
   input {
     margin-top: 2px;
-    background-color: #F0F0F0;
+    background-color: #e9e9e9;
     opacity: 100;
-    width: 250px;
-    height: 35px;
+    width: 42vh;
+    height: 8vh;
     display: block;
     padding: 10px;
     border: none;
     outline: none;
-    border-radius: 25px;
-    font-family: 'Poppins';
-    font-weight: 400;
+    border-radius: 5px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.3rem;
   }
 }
 
 .button{
-  --background: rgb(137, 135, 235);
-  margin-top: 25vh;
+  margin-top: -15px;
+  height: 10vh;
+  display: block;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Poppins';
+  letter-spacing: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
+.forget{
+  color: rgb(110 110 110);
+  margin-left: 22vh;
+  font-size: 1.1rem;
+  margin-top: 7px;
+  font-weight: 500;
+}
+
+.login2{
+  color: rgb(110, 110, 110);
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 15vh;
+  margin-top: 25px;
+}
+
+.circle
+{
+  width:60px;
+  height:60px;
+  background-color: #dadada;
+  border-radius:25px;
+  margin-left: 15%;
+}
+
+.circle2
+{
+  width:60px;
+  height:60px;
+  background-color: #dadada;
+  border-radius:25px;
+  margin-left: 40%;
+  margin-top: -60px;
+}
+
+.circle3
+{
+  width:60px;
+  height:60px;
+  background-color: #dadada;
+  border-radius:25px;
+  margin-left: 65%;
+  margin-top: -60px;
+}
+
+.icon{
+  width: 45px;
+  height: 45px;
+  color: rgb(80, 80, 80);
+  margin-left: 8px;
+  margin-top: 7px;
+}
+
+.registro{
+  color: #575757;
+  margin-top: 12vh;
+  margin-left: 13px;
+  font-size: 17px;
+  font-weight: 500;
+}
 }

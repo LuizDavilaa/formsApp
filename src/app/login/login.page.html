@@ -1,19 +1,35 @@
 <ion-content>
 
+  <div class="logo">
+    <img src="../../assets/download-removebg-preview.png">
+  </div>
+
 <div class="area">
   <div class="login">
-    <label class="username">Username</label>
-    <input placeholder="Digite o seu nome">
+    <label class="username"></label>
+    <input placeholder="Nome de usuário">
   </div>
 
   <div class="login">
-    <label class="senha">Senha</label>
-    <input type="password" placeholder="Senha do Usuário">
+    <label class="senha"></label>
+    <input type="password" placeholder="Senha">
   </div>
 </div>
 
+<p class="forget">Esqueceu a senha?</p>
+
 <ion-button class="button">Entrar</ion-button>
-<ion-button class="button">Registrar</ion-button>
-<ion-button class="button">Esqueci a senha</ion-button>
+
+<p class="login2">Faça login com</p>
+<div class="circle">
+  <ion-icon name="logo-facebook" class="icon"></ion-icon></div>
+<div class="circle2">   <ion-icon name="logo-instagram" class="icon"></ion-icon></div>
+<div class="circle3">
+  <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+</div>
+
+<p class="registro" routerLink="/registro">Ainda não tem uma conta? <b>Crie agora</b></p>
+
+
 
 </ion-content>
