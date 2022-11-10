@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 ion-content {
-font-family: 'Poppins';
---background: #f3f3f3;
+  font-family: "Poppins";
+  --background: #f3f3f3;
 
+  //arrumar tamanho da logo
   .logo {
     width: 200px;
     margin-left: 12vh;
     margin-top: 20px;
   }
 
+  //posicionando o login
   .area {
     font-size: large;
     position: relative;
@@ -18,101 +20,107 @@ font-family: 'Poppins';
     align-items: center;
     flex-flow: column;
     margin-top: -35px;
-  label {
-    color: rgb(26, 26, 26);
-    display: inline-flex;
-    margin-top: 10px;
+
+    //arrumando espaço entre os campos
+    label {
+      display: inline-flex;
+      margin-top: 10px;
+    }
+
+    //área destinada para a inserção das informações
+    input {
+      margin-top: 2px;
+      background-color: #e9e9e9;
+      opacity: 100;
+      width: 42vh;
+      height: 8vh;
+      display: block;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-family: "Poppins";
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
   }
-  input {
-    margin-top: 2px;
-    background-color: #e9e9e9;
-    opacity: 100;
-    width: 42vh;
-    height: 8vh;
+
+  .button {
+    margin-top: -15px;
+    height: 10vh;
     display: block;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
     font-family: "Poppins";
-    font-weight: 500;
-    font-size: 1.3rem;
+    letter-spacing: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
-}
 
-.button{
-  margin-top: -15px;
-  height: 10vh;
-  display: block;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  font-family: 'Poppins';
-  letter-spacing: 10px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
+  .forget {
+    color: rgb(110 110 110);
+    margin-left: 22vh;
+    font-size: 1.1rem;
+    margin-top: 7px;
+    font-weight: 500;
+  }
 
-.forget{
-  color: rgb(110 110 110);
-  margin-left: 22vh;
-  font-size: 1.1rem;
-  margin-top: 7px;
-  font-weight: 500;
-}
+  //login de outra maneira
+  .login2 {
+    color: rgb(110, 110, 110);
+    position: relative;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 15vh;
+    margin-top: 25px;
+  }
 
-.login2{
-  color: rgb(110, 110, 110);
-  position: relative;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-left: 15vh;
-  margin-top: 25px;
-}
+  //circulo 1 - facebook
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: #dadada;
+    border-radius: 25px;
+    margin-left: 15%;
+  }
 
-.circle
-{
-  width:60px;
-  height:60px;
-  background-color: #dadada;
-  border-radius:25px;
-  margin-left: 15%;
-}
+  //circulo 2 - instagram
+  .circle2 {
+    width: 60px;
+    height: 60px;
+    background-color: #dadada;
+    border-radius: 25px;
+    margin-left: 40%;
+    margin-top: -60px;
+  }
 
-.circle2
-{
-  width:60px;
-  height:60px;
-  background-color: #dadada;
-  border-radius:25px;
-  margin-left: 40%;
-  margin-top: -60px;
-}
+  //circulo 3 - linkedin
+  .circle3 {
+    width: 60px;
+    height: 60px;
+    background-color: #dadada;
+    border-radius: 25px;
+    margin-left: 65%;
+    margin-top: -60px;
+  }
 
-.circle3
-{
-  width:60px;
-  height:60px;
-  background-color: #dadada;
-  border-radius:25px;
-  margin-left: 65%;
-  margin-top: -60px;
-}
+  //ajustando o tamanho da logo
+  .icon {
+    width: 45px;
+    height: 45px;
+    color: rgb(80, 80, 80);
+    margin-left: 8px;
+    margin-top: 7px;
+  }
 
-.icon{
-  width: 45px;
-  height: 45px;
-  color: rgb(80, 80, 80);
-  margin-left: 8px;
-  margin-top: 7px;
-}
-
-.registro{
-  color: #575757;
-  margin-top: 12vh;
-  margin-left: 13px;
-  font-size: 17px;
-  font-weight: 500;
-}
+  //chamada para o registro
+  .registro {
+    color: #575757;
+    margin-top: 12vh;
+    margin-left: 13px;
+    font-size: 17px;
+    font-weight: 500;
+  }
 }

@@ -1,35 +1,47 @@
 <ion-content>
-
+  <!-- logo ETEC-->
   <div class="logo">
-    <img src="../../assets/download-removebg-preview.png">
+    <img src="../../assets/download-removebg-preview.png" />
   </div>
 
-<div class="area">
-  <div class="login">
-    <label class="username"></label>
-    <input placeholder="Nome de usuário">
+  <!-- área de login -->
+  <div class="area">
+    <div class="login">
+      <label class="username"></label>
+      <input placeholder="E-mail"/>
+    </div>
+
+    <div class="login">
+      <label class="senha"></label>
+      <input type="password" placeholder="Senha" />
+    </div>
   </div>
 
-  <div class="login">
-    <label class="senha"></label>
-    <input type="password" placeholder="Senha">
+  <p class="forget">Esqueceu a senha?</p>
+
+  <ion-button class="button">Entrar</ion-button>
+
+  <!-- chamada para o usuário efetuar o login de outra maneira -->
+  <p class="login2">Faça login com</p>
+
+  <!-- login com facebook -->
+  <div class="circle">
+    <ion-icon name="logo-facebook" class="icon"></ion-icon>
   </div>
-</div>
 
-<p class="forget">Esqueceu a senha?</p>
+  <!-- login usando o instagram -->
+  <div class="circle2">
+    <ion-icon name="logo-instagram" class="icon"></ion-icon>
+  </div>
 
-<ion-button class="button">Entrar</ion-button>
+  <!-- entrada com linkedin -->
+  <div class="circle3">
+    <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+  </div>
 
-<p class="login2">Faça login com</p>
-<div class="circle">
-  <ion-icon name="logo-facebook" class="icon"></ion-icon></div>
-<div class="circle2">   <ion-icon name="logo-instagram" class="icon"></ion-icon></div>
-<div class="circle3">
-  <ion-icon name="logo-linkedin" class="icon"></ion-icon>
-</div>
-
-<p class="registro" routerLink="/registro">Ainda não tem uma conta? <b>Crie agora</b></p>
-
-
+  <!-- chamada para registrar a conta -->
+  <p class="registro" routerLink="/registro">
+    Ainda não tem uma conta? <b>Crie agora</b>
+  </p>
 
 </ion-content>
