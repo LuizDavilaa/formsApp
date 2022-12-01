@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/semi */
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,25 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  formLogin: FormGroup;
 
-  formLogin = this.formBuilder.group([
-  {
-  email: ['', Validators.compose([Validators.required, Validators.email])],
-  senha: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
+  constructor(private formBuilder: FormBuilder) {
+    this.formLogin = this.formBuilder.group(
+      {
+        email: [
+          '',
+          Validators.compose([Validators.required, Validators.email]),
+        ],
+        senha: [
+          '',
+          Validators.compose([Validators.required, Validators.minLength(6)]),],
+      },
+    );
   }
-]);
 
-  constructor(private formBuilder: FormBuilder) {}
+  ngOnInit() {}
 
-  ngOnInit() {
+  salvarLogin() {
+    console.log('Formulário: ', this.formLogin.valid);
   }
-
 }

@@ -20,4 +20,20 @@ export class StorageService {
   public set(key: string, value: any ){
     this._storage?.set(key, value);
   }
+
+  public get(key: string){
+    this._storage?.get(key);
+  }
+
+  public remove(key: string){
+    this._storage?.remove(key);
+  }
+
+  public getAll(){
+    const lista = [];
+    this._storage.forEach((value, key, index) => {
+      lista.push(value);
+    });
+    return lista;
+  }
 }

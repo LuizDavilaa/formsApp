@@ -4,35 +4,37 @@
     <img src="../../assets/CPS.png">
   </div>
 
-<div class="area">
-  <div class="login">
-    <label class="username"></label>
-    <input placeholder="Nome">
+  <form [formGroup]="formCadastro">
+    <div class="area">
+      <div class="login">
+      <label class="username"></label>
+      <input formControlName="nome" placeholder="Nome">
+    </div>
+
+    <div class="login">
+      <label class="senha"></label>
+      <input formControlName="cpf" placeholder="CPF">
+    </div>
+
+    <div class="login">
+      <label class="username"></label>
+      <input formControlName="email" placeholder="E-mail">
+    </div>
+
+    <div class="login">
+      <label class="senha"></label>
+      <input formControlName="senha" type="password" placeholder="Senha">
+    </div>
+
+    <div class="login">
+      <label class="senha"></label>
+      <input formControlName="confirmaSenha" type="password" placeholder="Confirmar Senha">
+    </div>
+
   </div>
+</form>
 
-  <div class="login">
-    <label class="senha"></label>
-    <input placeholder="CPF">
-  </div>
-
-  <div class="login">
-    <label class="username"></label>
-    <input placeholder="E-mail">
-  </div>
-
-  <div class="login">
-    <label class="senha"></label>
-    <input type="password" placeholder="Senha">
-  </div>
-
-  <div class="login">
-    <label class="senha"></label>
-    <input type="password" placeholder="Confirmar Senha">
-  </div>
-
-</div>
-
-<ion-button class="button" routerLink="/login">Salvar</ion-button>
+<ion-button class="button" routerLink="/login" (click)="salvarCadastro()">Salvar</ion-button>
 
 <p>
 <b class="registro" routerLink="/login">Já tenho uma conta</b>

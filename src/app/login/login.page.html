@@ -5,21 +5,23 @@
   </div>
 
   <!-- área de login -->
-  <div class="area">
-    <div class="login">
-      <label class="username"></label>
-      <input placeholder="E-mail"/>
-    </div>
+  <form [formGroup]="formLogin" >
+    <div class="area">
+      <div class="login">
+        <label class="username"></label>
+        <input formControlName="email" placeholder="E-mail"/>
+      </div>
 
-    <div class="login">
-      <label class="senha"></label>
-      <input type="password" placeholder="Senha" />
+      <div class="login">
+        <label class="senha"></label>
+        <input formControlName="senha" type="password" placeholder="Senha" />
+      </div>
     </div>
-  </div>
+  </form>
 
   <p class="forget">Esqueceu a senha?</p>
 
-  <ion-button class="button">Entrar</ion-button>
+  <ion-button class="button" (click)="salvarLogin()">Entrar</ion-button>
 
   <!-- chamada para o usuário efetuar o login de outra maneira -->
   <p class="login2">Faça login com</p>
