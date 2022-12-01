@@ -15,9 +15,9 @@ export class RegistroPage implements OnInit {
       {
         nome: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
         cpf: ['', Validators.compose([Validators.required])],
-        email: ['', Validators.compose([Validators.required, Validators.email]),],
-        senha: ['', Validators.compose([Validators.required, Validators.minLength(6)]), Validators.maxLength(8)],
-        confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(6)]), Validators.maxLength(8)],
+        email: ['', Validators.compose([Validators.required, Validators.email])],
+        senha: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])],
+        confirmaSenha: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(8)])],
       },
     );
   }
