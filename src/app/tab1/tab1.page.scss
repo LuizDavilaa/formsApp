@@ -20,4 +20,29 @@
 .name{
   font-weight: 600;
   font-size: 1.5rem;
+  margin-top: 20px;
+  font-size: 23px;
+}
+
+.title{
+  background-color: #ffffff;
+  margin-left: 4.9vh;
+  position: relative;
+  width: 82%;
+  z-index: 5;
+}
+
+.line{
+  height: 2px;
+  width: 250vh;
+  background-color: #a1a1a1;
+  margin-top: -25px;
+}
+
+.item{
+  margin-top: 15px;
+}
+
+.item2{
+  margin-top: 13px;
 }
