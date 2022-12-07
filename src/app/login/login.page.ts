@@ -35,7 +35,6 @@ export class LoginPage implements OnInit {
       this.login.email = this.formLogin.value.email;
       this.login.senha = this.formLogin.value.senha;
       await this.storageService.set(this.login.email, this.login);
-      
     } else {
       alert ('Formulário invalido');
     }
