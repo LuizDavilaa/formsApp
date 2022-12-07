@@ -4,14 +4,25 @@
   <ion-button routerLink="/login">Login</ion-button>
   <ion-button routerLink="/registro">Registrar-se</ion-button>
 
+  <h1 class="title">Usuários Cadastrados</h1>
   <ion-item-sliding *ngFor="let user of listaUsuarios">
+
+
+
     <ion-item>
       <ion-label>
         <div>
-          <h1>{{user.nome}}</h1>
-          <span style="float: right;">{{user.cpf}}</span>
-          <a href="mailto:{{user.email}}"> {{user.email}}</a>
+
+          <h1 class="name">  <ion-icon name="person-outline" class="user"></ion-icon>
+            {{user.nome}}
+          </h1>
+          <span style="float: right; color: rgb(70, 70, 70);">
+            <ion-icon name="key-outline"></ion-icon>
+            {{user.cpf}}</span>
+          <a href="mailto:{{user.email}}">
+            <ion-icon name="mail-outline" class="mail"></ion-icon> {{user.email}}</a>
         </div>
+
       </ion-label>
     </ion-item>
 
