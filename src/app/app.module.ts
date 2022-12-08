@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers, Storage } from '@ionic/storage';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,6 +17,8 @@ import { Drivers, Storage } from '@ionic/storage';
   entryComponents: [],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot({

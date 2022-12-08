@@ -1,3 +1,4 @@
+import { Login } from './../models/Login';
 import { StorageService } from './../services/storage.service';
 import { Usuario } from './../models/Usuario';
 import { Component } from '@angular/core';
@@ -10,6 +11,7 @@ import { Component } from '@angular/core';
 export class Tab1Page {
 
   listaUsuarios: Usuario[] = [];
+  listaLogin: Login[] = [];
 
   constructor(private storageService: StorageService) {}
 
@@ -25,4 +27,5 @@ export class Tab1Page {
     await this.storageService.remove(email);
     this.buscarUsuarios();
   }
+
 }

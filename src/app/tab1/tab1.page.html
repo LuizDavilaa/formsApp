@@ -8,13 +8,12 @@
   <div class="line"></div>
   <ion-item-sliding *ngFor="let user of listaUsuarios">
 
-
-
     <ion-item class="item2">
       <ion-label>
         <div>
 
-          <h1 class="name">  <ion-icon name="person-outline" class="user"></ion-icon>
+          <h1 class="name">
+            <ion-icon name="person-outline" class="user"></ion-icon>
             {{user.nome}}
           </h1>
           <span style="float: right; color: rgb(70, 70, 70);">
@@ -32,8 +31,5 @@
         <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
       </ion-item-option>
     </ion-item-options>
-
-
   </ion-item-sliding>
-
 </ion-content>
