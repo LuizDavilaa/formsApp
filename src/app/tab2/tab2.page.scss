@@ -7,14 +7,15 @@
 .user{
   width: 20px;
   height: 20px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .mail{
   width: 15px;
   height: 15px;
-  margin-top: 5px;
+  margin-top: -15px;
   color: rgb(29, 29, 29);
+  margin-left: -10px;
 }
 
 .name{
@@ -45,4 +46,12 @@
 
 .item2{
   margin-top: 13px;
+}
+
+.cash{
+  width: 15px;
+    height: 15px;
+    margin-top: 13%;
+    color: rgb(29, 29, 29);
+    margin-left: -10px;
 }
